@@ -18,3 +18,13 @@ main {
 section {
   scroll-margin-top: 64px; /* Offset for fixed navbar */
 }
+/* For smaller screens, ensure the image and text stack properly */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column !important;
+  }
+
+  .hero-image {
+    margin: 1rem auto; /* Center the image */
+  }
+}
